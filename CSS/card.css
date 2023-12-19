@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.card1,.card2{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-weight: bolder;
+    border: 3px solid #EA2B1F;
+
+}
+
+.display{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+}
+.card1 {
+    position: relative;
+    z-index: 1;
+    width: 35%;
+    margin: 50px auto;
+    border-radius: 20px;
+    
+}
+
+.card2 {
+    position: relative;
+    z-index: 1;
+
+    width: 35%;
+    margin: 50px auto;
+    border-radius: 20px;
+    height: 50vh;
+}
+.card1 h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.temperature{
+    text-align: center;
+    font-size: 36px;
+
+}
+.card1_content{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+.gridinfo{
+   width: 70%;
+   margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.card2flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+.panaflex{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+
+}
+.panaflex:first-child{
+    justify-content: flex;
+}
+@media only screen and (max-width:800px) {
+    .card2 {
+        align-self: flex-start;
+        width: 70%;
+        height: 20vh;
+    }
+    .card1 {
+        position: relative;
+        z-index: 1;
+        width: 70%;
+        margin: 50px auto;
+        border-radius: 20px;
+        
+    }
+    .display{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .card2flex{
+        padding: 0px 10px;
+    }
+}
