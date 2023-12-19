@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/Background.css">
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div style="position: absolute; top: 0;" class="center">
+        
+       </div>
+
+    <nav>
+        <div class="logo">
+            <img src="Images/logo.svg" alt="Image of sun and clouds">
+        </div>
+        <div class="search">
+            <div class="city">
+                <input placeholder="Search Your city" type="text" name="city" id="city">
+                <button style="color: red;" id="submit">GO</button>
+            </div>
+
+
+        </div>
+
+        <div class="about">
+            <a style="color: maroon; font-weight: bolder;" href="https://mudasar.netlify.app">About</a>
+        </div>
+    </nav>
+    <main>
+        <div class="display">
+            <div class="card1">
+                <h3>Current weather in <span id="card1city">Quetta</span></h3>
+                <div class="card1_content">
+                    <div class="temperature">
+                        <span class="get_temperature"></span> °C <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.832 18.0001C13.1442 17.2857 13.5374 16.6148 14 15.999" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M21.9984 8C15.6563 8 10.2992 12.217 8.57812 18" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M21.9993 4C13.4329 4 6.26423 9.98405 4.44531 18" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M 22C20.6569 22 22 20.6569 22 C22 17.8896 21.3967 16.9201 20.5 16.4013V12H17.5V16.4013C16.6033 16.9201 16 17.8896 16 C16 20.6569 17.3431 22  22Z" stroke="#EA2B1F" stroke-width="1.5"/>
+                            <path d="M2 10C2.87815 10 3.72986 10.1132 4.54134 10.3258" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M2 6C3.86605 6 5.64683 6.36509 7.27481 7.02772" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M2 2C5.17533 2 8.15863 2.82221 10.7486 4.26534" stroke="#EA2B1F" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>    
+                    </div>
+                    <div>Region : <span class="region"></span></div>
+                    <div>Country: <span id="country"></span></div>
+                    <div class="gridinfo">
+                        <div>Wind:</div>
+                        <div><span class="wind"></span></div>
+                        <div>Humidity:</div>
+                        <div><span class="humidity"></span></div>
+                        <div>UV Index : </div>
+                        <div><span class="uv"></span></div>
+                        <div>Visibility:</div>
+                        <div><span class="visibility"></span></div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card2flex">
+                    <div class="panaflex stats">
+                        <div>Stats</div>
+                        <div>°C</div>
+                        <div>UV</div>
+                        <div>Wind</div>
+                    </div>
+                    <div class="panaflex islamabad">
+                        <div>Islamabad</div>
+                        <div class="tempisl"></div>
+                        <div class="uvisl"></div>
+                        <div class="windisl"></div>
+                    </div>
+                    <div class="panaflex jhang">
+                        <div>Jhang</div>
+                        <div class="tempjh"></div>
+                        <div class="uvjh"></div>
+                        <div class="windjh"></div>
+                    </div>
+                    <div class="panaflex murree">
+                        <div>Murree</div>
+                        <div class="tempmur"></div>
+                        <div class="uvmur"></div>
+                        <div class="windmur"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
